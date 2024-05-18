@@ -271,7 +271,11 @@
                 <li>
                     {{ device.kernel.version }}
                     {%- if device.kernel.repo %}
+                    {%- if device.kernel.repo == "android_kernel_xiaomi_sm8450" %} <!-- Devices with Xiaomi SM8450 kernel are considered part of our unofficial ones -->
+                    (<a href="https://github.com/cupid-development/{{ device.kernel.repo }}">source code</a>)
+                    {%- else %}
                     (<a href="https://github.com/LineageOS/{{ device.kernel.repo }}">source code</a>)
+                    {%- endif %}
                     {%- endif %}
                 </li>
             </ul>
