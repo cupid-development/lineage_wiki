@@ -148,7 +148,7 @@ function applyFilters() {
   });
 
   // Hide vendors list
-  $("#vendor-list").toggle($(".devices:visible").length > 1);
+  $("#vendor-list").toggle($(".devices:visible").length >= 1);
 
   // Show empty list placeholder
   $("#empty-list").toggle($(".devices:visible").length === 0);
@@ -179,10 +179,12 @@ function showFilters() {
 {%- assign variants = "" | split: " " %}
 {%- for device in site.data.devices %}
 {%- assign data = device[1] %}
+{%- if data.kernel.repo == "android_kernel_xiaomi_sm8450" %}
 {%- if data.variant == None or data.variant == 1 %}
 {%- assign devices = devices | push: data %}
 {%- elsif data.variant %}
 {%- assign variants = variants | push: data %}
+{%- endif %}
 {%- endif %}
 {%- endfor %}
 
@@ -212,6 +214,7 @@ function showFilters() {
   No devices matching selected filters!
 </div>
 
+{%- assign lastVendor = "" %}
 {%- for device in sorted %}
 {%- if device.vendor != lastVendor %}
 {%- assign lastVendor = device.vendor %}
