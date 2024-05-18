@@ -52,11 +52,16 @@ source build/envsetup.sh
 breakfast {{ device.codename }}
 ```
 
+{%- if device.kernel.repo == "android_kernel_xiaomi_sm8450" %}
+This will download your device's [device specific configuration](https://github.com/cupid-development/{{ device.tree }}) and
+[kernel](https://github.com/cupid-development/{{ device.kernel.repo }}).
+{%- else %}
 This will download your device's [device specific configuration](https://github.com/LineageOS/{{ device.tree }}) and
 {%- if device.kernel.repo %}
 [kernel](https://github.com/LineageOS/{{ device.kernel.repo }}).
 {%- else %}
 kernel.
+{%- endif %}
 {%- endif %}
 
 {% include alerts/important.html content="Some devices require a vendor directory to be populated before breakfast will succeed. If you receive an error here about vendor
