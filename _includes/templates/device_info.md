@@ -21,7 +21,7 @@ There are multiple variants of this device. [Make sure you're viewing the right 
 
 {% if device.maintainers != empty %}
 ## Downloads
-[Get the builds here](https://download.lineageos.org/devices/{{ device.codename }})
+[Get the builds here](https://lineage-downloads.mainlining.org/devices/{{ device.codename }})
 {% endif %}
 
 ## Guides
