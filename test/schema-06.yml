@@ -161,6 +161,7 @@ definitions:
       - Qualcomm Adreno 642
       - Qualcomm Adreno 642L
       - Qualcomm Adreno 643L
+      - Qualcomm Adreno 644
       - Qualcomm Adreno 650
       - Qualcomm Adreno 660
       - Qualcomm Adreno 675
@@ -356,6 +357,7 @@ definitions:
       - Qualcomm SM7325 Snapdragon 778G 5G
       - Qualcomm SM7325-AE Snapdragon 778G+ 5G
       - Qualcomm SM7350-AB Snapdragon 780G 5G
+      - Qualcomm SM7450 Snapdragon 7 Gen1
       - Qualcomm SM7475 Snapdragon 7+ Gen2
       - Qualcomm SM8150 Snapdragon 855
       - Qualcomm SM8150-AC Snapdragon 855+
@@ -626,6 +628,7 @@ properties:
       - Cortex-A55
       - Cortex-A57
       - Cortex-A7
+      - Cortex-A710 & Cortex-A510
       - Cortex-A72
       - Cortex-A73 & Cortex-A53
       - Cortex-A75 & Cortex-A55
