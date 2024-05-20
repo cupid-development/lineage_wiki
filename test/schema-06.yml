@@ -166,6 +166,7 @@ definitions:
       - Qualcomm Adreno 680
       - Qualcomm Adreno 685
       - Qualcomm Adreno 690
+      - Qualcomm Adreno 725
       - Qualcomm Adreno 730
       - Qualcomm Adreno 740
   iso8601_reduced_precision_date:
@@ -349,6 +350,7 @@ definitions:
       - Qualcomm SM7325 Snapdragon 778G 5G
       - Qualcomm SM7325-AE Snapdragon 778G+ 5G
       - Qualcomm SM7350-AB Snapdragon 780G 5G
+      - Qualcomm SM7475 Snapdragon 7+ Gen2
       - Qualcomm SM8150 Snapdragon 855
       - Qualcomm SM8150-AC Snapdragon 855+
       - Qualcomm SM8150-AC Snapdragon 860
