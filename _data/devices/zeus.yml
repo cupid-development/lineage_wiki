@@ -28,6 +28,7 @@ peripherals: [A-GPS, Accelerometer, Barometer, Compass, Dual SIM, Dual speakers,
 ram: 8/12 GB LPDDR5
 recovery_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Power</kbd>. Keep holding both buttons until the "MI" logo appears on the screen, then release.
 recovery_partition_name: recovery
+recovery_reboot: fastboot_reboot
 release: 2021-12-31
 screen: {refresh_rate: 120, resolution: '1440x3200', size: 6.73, technology: 'AMOLED'}
 soc: Qualcomm SM8450 Snapdragon 8 Gen1
