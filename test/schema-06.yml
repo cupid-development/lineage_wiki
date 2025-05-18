@@ -670,6 +670,7 @@ properties:
       - Cortex-A55
       - Cortex-A57
       - Cortex-A7
+      - Cortex-A710 & Cortex-A510
       - Cortex-A72
       - Cortex-A73 & Cortex-A53
       - Cortex-A75 & Cortex-A55
