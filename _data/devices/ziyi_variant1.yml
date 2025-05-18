@@ -32,7 +32,7 @@ recovery_partition_name: recovery
 recovery_reboot: fastboot_reboot
 release: 2023-03-08
 screen: {refresh_rate: 120, resolution: '1080x2400', size: 6.55, technology: 'AMOLED'}
-soc: Qualcomm SM7450 Snapdragon 7 Gen1
+soc: Qualcomm SM7450-AB Snapdragon 7 Gen 1
 storage: 128/256 GB UFS 2.2
 tree: android_device_xiaomi_ziyi
 type: phone
