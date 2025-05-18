@@ -31,7 +31,7 @@ recovery_partition_name: recovery
 recovery_reboot: fastboot_reboot
 release: 2023-05-09
 screen: {refresh_rate: 120, resolution: '1080x2400', size: 6.67, technology: 'AMOLED'}
-soc: Qualcomm SM7475 Snapdragon 7+ Gen2
+soc: Qualcomm SM7475-AB Snapdragon 7+ Gen 2
 storage: 256 GB UFS 3.1
 tree: android_device_xiaomi_marble
 type: phone
