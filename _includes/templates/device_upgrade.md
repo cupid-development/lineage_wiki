@@ -48,7 +48,7 @@ This device does not have more than one version so far, therefore we can't provi
 {%- elsif device.uses_twrp %}
 1. Verify your device is using the latest [TWRP](https://dl.twrp.me/{{ custom_recovery_codename }}). Simply download the latest recovery file, named something like `twrp-x.x.x-x-{{ custom_recovery_codename }}.img`.
 {%- else %}
-1. Verify your device is using the latest [Lineage Recovery](https://download.lineageos.org/devices/{{ custom_recovery_codename }}). Simply download the latest recovery file, named `{{ device.recovery_partition_name }}.img`.
+1. Verify your device is using the latest [Lineage Recovery](https://lineage-downloads.mainlining.org/devices/{{ custom_recovery_codename }}). Simply download the latest recovery file, named `{{ device.recovery_partition_name }}.img`.
 {%- endif %}
 Follow your [device's installation guide]({{ device | device_link: "install" | relative_url }}) to see how you can update your recovery image.
     {% include alerts/important.html content="These instructions may not work if you choose to use a different recovery!" %}
@@ -68,7 +68,7 @@ The updater app does not support upgrades from one version of LineageOS to anoth
 
 {{ recovery_update }}
 {%- if device.maintainers != empty %}
-1. Download the [LineageOS install package](https://download.lineageos.org/devices/{{ device.codename }}) that you'd like to install or [build]({{ device | device_link: "build" | relative_url }}) the package yourself.
+1. Download the [LineageOS install package](https://lineage-downloads.mainlining.org/devices/{{ device.codename }}) that you'd like to install or [build]({{ device | device_link: "build" | relative_url }}) the package yourself.
 {%- else %}
 1. [Build]({{ device | device_link: "build" | relative_url }}) a LineageOS install package.
 {%- endif %}
@@ -114,7 +114,7 @@ The updater app does not support upgrades from one version of LineageOS to anoth
     If you get the following error: `fastboot: usage: unknown command wipe-super`, make sure [ADB and fastboot are updated to the latest version]({{ "adb_fastboot_guide.html" | relative_url }}). You need fastboot version 28.0.2 or greater.
     {%- endcapture %}
     {%- include alerts/note.html content=content %}
-7. Update to the latest [Lineage Recovery](https://download.lineageos.org/devices/{{ device.codename }}) image. Simply download the latest recovery file, named `{{ device.recovery_partition_name }}.img`.
+7. Update to the latest [Lineage Recovery](https://lineage-downloads.mainlining.org/devices/{{ device.codename }}) image. Simply download the latest recovery file, named `{{ device.recovery_partition_name }}.img`.
 Follow your [device's installation guide]({{ device | device_link: "/install" | relative_url }}) to upgrade your recovery image.
 8. While you are in bootloader mode, run this command to enter recovery mode:
     ```
